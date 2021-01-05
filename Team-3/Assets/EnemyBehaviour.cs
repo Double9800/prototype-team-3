@@ -34,7 +34,7 @@ public class EnemyBehaviour : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             myScript.enabled = false;
-            
+
         }
     }
 
