@@ -511,7 +511,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.13052596, y: -0, z: -0, w: 0.99144495}
-  m_LocalPosition: {x: 0, y: 5.8, z: -11.58}
+  m_LocalPosition: {x: -14.2, y: 13, z: -38.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -745,6 +745,7 @@ GameObject:
   - component: {fileID: 1742170108}
   - component: {fileID: 1742170107}
   - component: {fileID: 1742170106}
+  - component: {fileID: 1742170109}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -767,6 +768,7 @@ MonoBehaviour:
   canna: {fileID: 612511630}
   player: {fileID: 222932272}
   tPlayer: {fileID: 222932278}
+  myScript: {fileID: 1742170109}
 --- !u!135 &1742170107
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -796,3 +798,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1742170109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742170105}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0072694d619d44e8d65602eff39cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyBullet: {fileID: 4263382329858990284, guid: 35a02df1c6d72fc4aaf7cc78fce56dea,
+    type: 3}
+  canna: {fileID: 612511634}
+  enemyParent: {fileID: 0}
+  maxTimer: 10
+  Timer: 0
